@@ -8,29 +8,18 @@ namespace BasicCsharpandFunctional
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            //2 :Check Wether a Number is Even Or Odd 
-            //variables
-            int num = 0;
-          
-            Console.WriteLine("Please enter the Number");
-            num = Convert.ToInt32(Console.ReadLine());
-
-            if ( num%2 == 0)
-
-                Console.WriteLine("Given Number is Even", num);
-            else
-                Console.WriteLine("Given Number is Odd", num);
-            
+            Console.WriteLine("Enter any Letters To Check Vowels Or Constant");
+            string input=Console.ReadLine();
+            VowelsOrConsonant.VowelConstant(input);
             Console.ReadLine();
-
-
         }
     }
+           
 }
      
-        
+     
 
 
     
