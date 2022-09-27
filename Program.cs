@@ -13,7 +13,7 @@ namespace BasicCsharpandFunctional
         {
            
             Console.WriteLine("Please choose any one program from below option");
-            Console.WriteLine("1:Vowel or Consontant\n2:Find Largest Among Three Numbers\n3:Find Prime Factor");
+            Console.WriteLine("1:Vowel or Consontant\n2:Find Largest Among Three Numbers\n3:Find Prime Factor\n4:Flip The Coin");
             int option=Convert.ToInt32(Console.ReadLine());
 
             switch(option)
@@ -31,8 +31,12 @@ namespace BasicCsharpandFunctional
                 case 3:
                     FindPrimeFactors.PrimeNumbers();
                     break;
-
-            
+                case 4:
+                    FlipCoin.CoinFlips();
+                    break;
+                default:
+                    Console.WriteLine("Please Enter the Number Within Range");
+                    break;
             }
             Console.ReadLine();
         }

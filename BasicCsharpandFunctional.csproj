@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FindPrimeFactors.cs" />
+    <Compile Include="FlipCoin.cs" />
     <Compile Include="LargestAmongThree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
