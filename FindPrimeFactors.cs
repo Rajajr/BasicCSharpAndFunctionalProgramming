@@ -10,36 +10,24 @@ namespace BasicCsharpandFunctional
     {
         public static void PrimeNumbers()
         {
-            //Find Prime Factors Numbers
+            //Find All The Factors of a Given Number
             //Variables
-            int factor=0;
             int num = 0;
-            Random random = new Random();
-            Console.WriteLine("enter the number");
+            int factor = 0;
+
+            Console.WriteLine("Enter the Value of the Number : ");
+            num=Convert.ToInt32(Console.ReadLine());
            
-            for (int i = 0; i <= 10; i++)
+            for (factor = 1; factor < num; factor++)
             {
-                num = random.Next(1,11);
-                Console.WriteLine(num);
-            }
-            for (int i = 1; i <= num; i++)
-            {
-                if(num % i== 0)
+                if (num%factor == 0)
                 {
-                    factor = factor + 1; 
+                    Console.WriteLine(factor + ",");
                 }
             }
-            if (factor>2)
-            {
-                Console.WriteLine("Given Number {0} is not prime", num);
-            }
-            else
-            {
-                Console.WriteLine("Given Number {0} is prime", num);
-            }
-
+            Console.ReadLine();
             
-
+       
         }
     }
 }
